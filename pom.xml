@@ -18,7 +18,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
 	</parent>
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -81,6 +81,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-javanica</artifactId>
+			<version>1.5.9</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
@@ -103,7 +109,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.thoughtmechanix.authentication.Application</start-class>
 		<docker.image.name>gfioritti/sbms-authentication-service</docker.image.name>
-		<docker.image.tag>chapter7</docker.image.tag>
+		<docker.image.tag>chapter7-jwt</docker.image.tag>
 	</properties>
 
 	<build>
